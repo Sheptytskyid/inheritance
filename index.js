@@ -33,7 +33,7 @@ class IntBuilder extends BaseClass {
 
     divide(n = 1) {
         if (typeof n === "number") {
-            this.data /= n;
+            this.data = Math.floor(this.data / n);
         }
         return this;
     }
